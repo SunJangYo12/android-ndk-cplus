@@ -11,11 +11,12 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         TextView  tv = new TextView(this);
-        tv.setText("Num: "+cplus() );
+        tv.setText("Num: "+cplus()+"\n"+str() );
         setContentView(tv);
     }
 
     public native int cplus();
+    public native String str();
     
 
     static {
